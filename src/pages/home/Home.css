@@ -1,0 +1,115 @@
+.home{
+    gap: 0;
+}
+
+.home__container{
+    padding: 7rem 0 2.5rem;
+    background: linear-gradient(
+        160deg,
+        #471a0d,
+        #6d351a);
+}
+
+.home__content{
+    position: relative;
+}
+
+.home__title,
+.home__data-title{
+    color: #fff;
+}
+
+.home__title{
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.home__title span{
+    color: var(--first-color-alt);
+}
+
+.home__description{
+    margin-bottom: 2rem;
+}
+
+.home__data{
+    border-top: 1px solid var(--text-color);
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+}
+
+.home__data-number{
+    color: var(--first-color-alt);
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.home__data-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+
+.home__scroll{
+    position: absolute;
+    width: 100px;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: scroll 3s infinite;
+}
+
+@media screen and (min-width: 767px){
+    .home{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        position: relative;
+    }
+
+    .home__content{
+        position: initial;
+    }
+
+    .home__scroll{
+        bottom: 0;
+        top: 0;
+        margin: auto;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1040px){
+    .home__content{
+        max-width: 400px;
+        margin-right: 7rem;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home__container{
+        padding-top: 10rem;
+    }
+    .home__data{
+        padding-top: 3rem;
+    }
+    .home__title{
+        margin-bottom: 2rem;
+    }
+    .home__description{
+        margin-bottom: 3rem;
+    }
+    .home__scroll{
+        width: 130px;
+    }
+}
+/* Alternative code, for larger screens */
+@media screen and (min-width: 1700px){
+    .home{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,125 @@
+.footer{
+    /* background-color: var(--first-color); */
+    padding: 4rem 0 2.5rem;
+}
+
+.footer__title{
+    color: var(--first-color);
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+}
+
+.footer_description{
+    margin-bottom: .75rem;
+}
+
+.footer__newsletter{
+    display: flex;
+    column-gap: .5rem;
+}
+
+.footer__input{
+    border: 1px solid #471a0d;
+    outline: none;
+    padding: 1.25rem 1rem;
+    border-radius: .25rem;
+    width: 70%;
+    color: var(--first-color);
+}
+
+.footer__button{
+    padding: .75rem;
+    font-size: 2rem;
+    border-radius: .25rem ;
+    display: inline-flex;
+    background-color: var(--first-color);
+}
+
+.footer__button i{
+    transform: rotate(-30deg);
+    transition: .4s;
+}
+
+.footer__button:hover i{
+    transform: rotate(-30deg) translate(.25rem);
+}
+
+.footer__content{
+    row-gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--first-color);
+}
+
+.footer__subtitle{
+    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    margin-bottom: .75rem;
+}
+
+.footer__group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.footer__social-link{
+    color: var(--first-color);
+    transition: .4s;
+}
+
+.footer__social-link:hover{
+    color: var(--first-color-alt);
+}
+
+.footer__copy{
+    font-size: var(--smaller-font-size);
+}
+
+@media screen and (min-width: 576px){
+    .footer__newsletter{
+        width: 350px;
+    }
+} 
+
+@media screen and (min-width: 767px){
+    .footer__content{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1040px){
+    .footer__content{
+        grid-template-columns: repeat(4, max-content);
+        column-gap: 4rem;
+        padding-bottom: 5.5rem;
+    }
+
+    .footer__group{
+        margin-top: 3rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__title{
+        font-size: var(--h2-font-size);
+    }
+
+    .footer__social{
+        column-gap: 2rem;
+    }
+
+    .footer__social-link{
+        font-size: 1.5rem;
+    }
+}
